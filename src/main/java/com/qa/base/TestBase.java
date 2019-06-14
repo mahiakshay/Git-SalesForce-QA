@@ -39,7 +39,11 @@ public class TestBase {
 			System.setProperty("webdriver.gecko.driver", "C://firefoxdriver.exe");
 			driver = new FirefoxDriver();
 		}
-		
+		else if (browName.equalsIgnoreCase("IE"))
+		{
+			System.setProperty("webdriver.gecko.driver", "C://firefoxdriver.exe");
+			driver = new FirefoxDriver();
+		}
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
